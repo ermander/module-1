@@ -1,13 +1,8 @@
-/* EXERCISE 7
-Write a function "reverseString" to reverse programmatically a given string (es.: Strive => evirtS).
+/* EXERCISE 10
+Write a function "giveMeRandom" which accepts a number n 
+and returns an array containing n random numbers between 0 and 10
 */
 
-const reverseString = function(string){
-    const splitString = string.split("")
-    const reverseArray = splitString.reverse("")
-    const joinArray = reverseArray.join("")
-    return joinArray
+const giveMeRandom = function(n){
+    
 }
-
-let reversedString = reverseString("oiddocroP")
-console.log(reversedString)
