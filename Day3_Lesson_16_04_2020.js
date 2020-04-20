@@ -1,14 +1,20 @@
 
 
-
-
 // TERNARY OPERATOR
+
+/*
+ 
+Sintassi = condizione ? espressione1 : espressione2
+Se la condizione è vera, ritorna l'espressione1, in caso contrario
+ritorna l'espressione2   
 ​
-// const studentAge = 19;
-​
-// const price = (studentAge > 18 && studentAge < 30) ? "20$" : "15$";
-​
-// console.log(price);
+/* 
+
+const studentAge = 19;
+const price = (studentAge > 18 && studentAge < 30 ? "20$" : "15$");
+console.log(price);
+
+*/
 ​
 // if(studentAge > 18) {
 //     console.log(true)
@@ -19,15 +25,22 @@
 // TRUTHY FALSY
 ​
 // const truthyOrFalsy = 2 - 2 ? "truthy" : "falsy";
-//const truthyOrFalsy = undefined ? "truthy" : "falsy";
+// const truthyOrFalsy = undefined ? "truthy" : "falsy";
 // const truthyOrFalsy = null ? "truthy" : "falsy";
-//const truthyOrFalsy = NaN ? "truthy" : "falsy";
-//const truthyOrFalsy = "" ? "truthy" : "falsy";
+// const truthyOrFalsy = NaN ? "truthy" : "falsy";
+// const truthyOrFalsy = "" ? "truthy" : "falsy";
 // const truthyOrFalsy = 1 ? "truthy" : "falsy";
 ​
 // console.log(truthyOrFalsy);
 ​
 // DOUBLE EQUALITY VS TRIPLE EQUALITY
+
+/*
+
+La doppia == confronta se i due valori sono uguali, la tripla === confronta se i due valori
+sono anche dello stesso tipo
+
+*/
 ​
 // if (0 === "0") {
 //   console.log("They are equal");
