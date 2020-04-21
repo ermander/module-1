@@ -12,13 +12,16 @@ Write a function "area" which receives 2 parameters (l1,l2) and calculate the ar
 
 
 /*
-const areaRectangle=function(l1, l2){
-    const area=l1*l2
-    return area
-}
 
-let resultAreaRec=areaRectangle(10,15)
-console.log("The area of the rectangle is: ", resultAreaRec)
+let area = function(l1, l2){
+    if(l1!=l2){
+        return l1*l2;
+    }else{
+        return "The numbers are not valid, this is not a rectangle!";
+    }
+}
+console.log(area(2, 4));
+
 */
 
 
@@ -28,15 +31,21 @@ Write a function "crazySum" which receives two given integers. If the two values
 ​
 
 /*
-const crazySum = function(integers1, integers2){
-    if(integers1===integers2){
-        const triple = (integers1+integers2) * 3
-        return triple        
+
+let crazySum = function(firstInteger, secondInteger){
+    if(firstInteger===secondInteger && Number.isInteger(firstInteger)===true && Number.isInteger(secondInteger)===true){
+        return (firstInteger+secondInteger)*3;
+    }else if(firstInteger!=secondInteger && Number.isInteger(firstInteger)===true && Number.isInteger(secondInteger)===true){
+        return "The numbers are not the same!";
+    }else{
+        return "Error! You can not use those values! ";
     }
 }
 
-let resultTriple = crazySum(2,2)
-console.log(resultTriple)
+console.log(crazySum(2, 2));
+console.log(crazySum(2, 4));
+console.log(crazySum(2, 2.1));
+
 */
 
 
@@ -51,15 +60,15 @@ number is greater than 19.
 
 /*
 const crazyDiff = function(number){
-    let difference = number-19
+    let difference = number-19;
     if(number>19){
-        let trippleDifference = difference*3
-        return trippleDifference
+        let trippleDifference = difference*3;
+        return trippleDifference;
     }    
 }
 
-let isTrippleDifference = crazyDiff (21)
-console.log(isTrippleDifference)
+console.log(crazyDiff(21));
+
 */
 
 
@@ -69,25 +78,34 @@ Write a function "boundary" which accept an integer N and returns true if N is w
 ​
 
 /*
-const boundary = function(integer){
-    if(integer>=20 && integer<= 100 || integer===400 ){
-        return true
+
+const boundary = function(N){
+    if((N>=20 && N<= 100 && Number.isInteger(N)===true) || (N===400 && Number.isInteger(N)===true)){
+        return true;
+    }else if((N>=20 && N<= 100 && Number.isInteger(N)===false) || (N===400 && Number.isInteger(N)===false)){
+        return "The value insert is not an integer!";
     }else{
-        const notTrue = "The value insert is not valid!"
-        return notTrue
+        return "The value insert is not valid!";
     }
 }
 
-let confrontation = boundary(400)
-console.log(confrontation)
+console.log(boundary(21));
+console.log(boundary(400));
+console.log(boundary(21.2));
+console.log(boundary(101));
+
 */
 
 
 ​
 /* EXERCISE 5
-Write a function "strivify" which accepts a string S. Add to S "Strive" in front of a given string, if the given string begins with "Strive" then return the original string.
+Write a function "strivify" which accepts a string S. 
+Add to S "Strive" in front of a given string, 
+if the given string begins with "Strive" then return the original string.
 */
-​
+
+const strivify = function(S){
+    ​
 /* WRITE YOUR CODE HERE */
 ​
 /* EXERCISE 6
@@ -97,23 +115,24 @@ HINT: Module Operator
 
 /*
 const check3and7 = function (num){
-    if(num%3===0 && num%7!=0){
-        const multipleOf3 = "The number is a multiple of 3!"
-        return multipleOf3
-    }else if(num%3!=0 && num%7===0){
-        const multipleOf7 = "The number is a multiple of 7!"
-        return multipleOf7
-    }else if(num%3===0 && num%7===0){
-        const multipleOfBoth = "The number is a multiple of 3 and 7!"
-        return multipleOfBoth
+    if((num%3===0 && num%7!=0) && num>0){
+        return "The number is a multiple of 3!";
+    }else if((num%3!=0 && num%7===0) && (num>0)){
+        return "The number is a multiple of 7!";
+    }else if((num%3===0 && num%7===0) && (num>0)){
+        return "The number is a multiple of 3 and 7!"
+    }else if(((num%3===0 && num%7!=0) || (num%3!=0 && num%7===0) || (num%3===0 && num%7===0)) && (num<=0)){
+        return "The insert number is not a positive number!";
     }else{
-        const multipleOfNone = "The number is not a multiple of 3 or 7!"
-        return multipleOfNone
+        return "The number is not a multiple of 3 or 7";
     }  
 }
 
-let confrontation = check3and7(2)
-console.log(confrontation)
+console.log(check3and7(3));
+console.log(check3and7(7));
+console.log(check3and7(21));
+console.log(check3and7(0));
+console.log(check3and7(4));
 */
 ​
 
@@ -137,8 +156,16 @@ console.log(reversedString)
 ​
 
 /* EXERCISE 8
-Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as parameter
+Write a function "upperFirst" to capitalize the first letter of each word of a 
+given string passed as parameter
 */
+function upperFirst(sentence) {
+    let words = sentence.split(' ')
+    let upperWords = words.forEach(function(word) {
+        return word.toUpperCase()
+    })
+    return upperWords.join(' ')
+}
 ​
 /* WRITE YOUR CODE HERE */
 ​

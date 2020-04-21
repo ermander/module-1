@@ -8,6 +8,7 @@ della nostra variabile ecc vengano stampate su linee diverse
 */
 
 /*
+
 let myNumber = 2;
 
 const myString = `First line
@@ -19,20 +20,31 @@ console.log(myString);
 */
 
 
-//  myString.slice (3,6);   // Ritorna solo una parte della stringa
+/*  myString.slice (3,6);   // Ritorna solo una parte della stringa, in questo caso
+dall'elemento di indice 3 all'elemento di indice 6 */
 
 //  myString.lastIndexOf('a');
 
-//  myString.trim();
+//  myString.trim(); // Rimuove le whitespace presenti all'inizio e alla fine
 
 
 /*
+
 const sentence = ` Hello striver we are trying split method`
+
+Il metodo .split consente di suddividere una stringa data, ritornando un array di valori.
+
 const splittedWords = sentence.split("");
 
+
+
 console.log(splittedWords);
-console.log(splittedWords.join(',       '));
-console.log("asd".repeat(5));
+
+console.log(splittedWords.join(',       ')); // Unisce tutti gli elementi di un array, e li 
+restituisce in una stringa 
+
+console.log("asd".repeat(5)); // Ripete la suddeetta stringa per tot volte 
+
 console.log(Math.)  // Cercare le funzionalità della libreria Math!!
 */
 
