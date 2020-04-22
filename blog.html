@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Blog</title>
+        <meta name="description" content="Awasome blog by Traversy Media"/>
+        <meta name="keywords" content="web design blog, web dev blog, traversy media" /> 
+        <!-- <meta> All'interno di questo tag saranno presenti dati che non sono visibili
+        all'user, ma che vengono letti da (per esempio) google (o un motore di ricerca)
+        quando indicizza il sito, guardando la descrizione, le parole chiave ecc -->
+        <style type="text/css">
+        #mainHeader{
+            text-align: center; 
+            background-color: black;
+            color: white;
+            padding: 10;
+        }
+        #mainFooter{
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        </style>
+        <!-- type="test/css" non è essenziale da inserire all'interno di <style></style>
+        dato che viene incluso di default. C'è solo un piccolo motivo per inserirlo dei testi
+        moderni di html, DA APPROFONDIRE! -->
+    </head>
+    <body>
+        <header id="mainHeader">
+            <!-- <header> </header> serve per creare una parte del testo che serve
+            da contenitore per ausili alla navigazione o parti introduttive. 
+            All'interno di un testo, ce ne possono essere molti presenti, ed è quindi consigliato
+            creare delle classi o degli id a loro dedicati -->
+            <h1>
+                My Website
+            </h1>
+        </header>
+        <hr>
+        <a href="TraversyHTMLBeginnersCourse.html">Go to traversy html beginners course</a>
+        <section>
+            <!-- <section></section> viene utilizzato per ospitare i contenuti principali 
+            della pagina. I vari contenuti saranno poi inseriti all'interno del tag 
+            <article></article> -->
+            <article class="post">
+                <h3>Blog Post One</h3>
+                <small>Posted by Brad on July 17</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Esse facere sed consequatur, quibusdam voluptatibus modi, qui,
+                    consectetur nihil ducimus nulla itaque odio aperiam animi temporibus
+                    dolores voluptate quis perspiciatis autem.</p>
+                <!-- <small></small> serve per diminuire la dimensione del testo all'interno
+                del tag-->
+                <a href="post.html">Read More</a>
+            </article>
+            <article class="post">
+                <h3>Blog Post Two</h3>
+                <small>Posted by Brad on July 17</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Esse facere sed consequatur, quibusdam voluptatibus modi, qui,
+                    consectetur nihil ducimus nulla itaque odio aperiam animi temporibus
+                    dolores voluptate quis perspiciatis autem.</p>
+                <a href="post.html">Read More</a>    
+                </article>
+            <article class="post">
+                <h3>Blog Post Three</h3>
+                <small>Posted by Brad on July 17</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Esse facere sed consequatur, quibusdam voluptatibus modi, qui,
+                    consectetur nihil ducimus nulla itaque odio aperiam animi temporibus
+                    dolores voluptate quis perspiciatis autem.</p>
+                <a href="post.html">Read More</a>
+            </article>
+        </section>
+        <aside>
+            <!-- Rappresenta una sezione di una pagina costituita da informazioni
+            corelate al contenuto dell'elemento padre che la contiene, ma comunque
+            considerate distinte da questo'ultimo. Ci si possono inserire link, 
+            approfondimenti messaggi pubblicitari ecc -->
+            <h3>Categories</h3>
+            <nav>
+            <!-- <nav></nav> contiene al suo interno tutti gli elementi che possono essere
+            utili alla navigazione, come link verso altre pagine, o link che indirizzano as 
+            altre parti del testo ecc... -->
+                <ul>
+                    <li><a href="#">Category 1</a></li>
+                    <li><a href="#">Category 2</a></li>
+                    <li><a href="#">Category 3</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <footer id="mainFooter">            
+            <!-- <footer></footer> Serve per contenere al suo interno i dati di chi
+            ha scritto i contenuti, collegamenti ad altri documenti correlati, i dati 
+            di copyright ecc... Se ne possono trovare molti all'interno di un testo, ed è quindi
+            consigliato di creare degli id o delle classi a loro dedicati-->
+            <p>Copyright &copy; 2007, My Website</p>
+            <!-- &copy; serve per scrivere il simbolo di copyright-->
+        </footer>
+    </body>
+</html>
