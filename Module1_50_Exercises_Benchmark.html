@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <!--
+
+        HTML EXERCISES
+
+        1) Create a title for the page
+        2) Create a heading
+        3) Create an ordered list
+        4) Create a table with 5 columns and 4 rows
+        5) Add an image for each second cell of the first row
+        6) Merge together 2 table cells
+        7) Add a link for every image
+        8) Divide the page using a horizontal line
+        9) Create a container with a nested paragraph and a nested unordered list
+        10) Create a footer with some information about the page creator 
+
+        CSS EXERCISES
+
+        11) Give a maximum width to the body and center it in the page
+        12) Set every h1 to be centered
+        13) Change the color of each link in the page
+        14) Create a class with a border
+        15) Set table to have rounded borders
+        16) Add margin between every paragraph
+        17) Create a class which change font size and boldness
+        18) Create a class to hide a content
+        19) Add a green border to each td
+        20) Add a dotted red border to each tr (non viene visualizzato, controllare!)
+
+        JS EXERCISES
+
+        21) Given variable X = "John" and Y = "Doe", write on the console log "John <> Doe"
+        22) Create an object with properties such Name, Surname, Email
+        23) Delete Email from the previously created object
+        24) Create an array with 10 strings in it
+        25) Print in the console every string in the previous array
+        26) Create an array with 100 random numbers in it
+        27) Wrote a function to get the MAX and the MIN from the previously created array
+        28) Create an array of arrays, in which every array has 10 random numbers
+        29) Create a function that gets 2 arrays and returns the longest one
+        30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
+
+        DOM 
+
+        31) Get element with ID "container" from the page
+        32) Get every "td" from the page
+        33) Create a cycle that prints the text inside every td of the page
+        34) Write a function to change the heading of the page
+        35) Write a function to add an extra row to the table
+        36) Write a function to add the class "test" to reach row in the table
+        37) Write a function to add a red background to every link in the page
+        38) Console log "Page loaded" when the page is correctly loaded
+        39) Write a function to add new items to a UL
+        40) Write a function to empty a list
+
+        EXTRA 
+
+        41) Add an eventListener to alert when the mouse is over a link, displaying the URL
+        42) Add a button to hide every image on the page
+        43) Add a button to hide and show the table from the page
+        44) Write a function to sum every number inside the TD (if the content is numeric)
+        45) Delete the last letter from the title each time the user clicks on it
+        46) Change the a single TD backgrund color when the user clicks on it
+        47) Add a button DELETE, on click it should delete a random TD from the page
+        48) Add a pink border to a cell when the mouse is over
+        49) Write a function to add a table with 4 rows and 3 lines programmatically
+        50) Write a function to remove the table from the page
+    -->
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Module 1 BenchMark Test</title>
+    <style>
+      body {
+      max-width: 80%;
+      margin: auto;
+      
+    }
+    h1{
+      position: center;
+      text-align: center;
+    }
+    a{
+      color: green;
+    }
+    #table{
+      border: 2px solid grey;
+      border-radius: 1em;
+    }
+    p{
+      margin: 5px;
+    }
+    .sizeAndBoldness{
+      font-size: 1em;
+      font-size: bold;
+    }
+    .hiddeedContent{
+      visibility: hidden;
+    }
+    td{
+      border: 1px solid green;
+    }
+    tr{
+      border: dotted;
+      border-color: red;
+      border-width: 1em;
+    }
+    
+    </style>
+  </head>
+  <body>
+    <h1>Module 1 BenchMark Test</h1>
+    <ol>
+      <li>Element 1</li>
+      <li>Element 2</li>
+      <li>Element 3</li>
+      <li>Element 4</li>
+      <li>Element 5</li>
+      <li>Element 6</li>
+    </ol>
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+          <th>Column 3</th>
+          <th>Column 4</th>
+          <th>Column 5</th>          
+        </tr>
+      </thead>
+      <div>
+        <tbody>
+          <tr>
+            <td>Row 1</td>
+            <td>
+              <img src="https://pawprint.s3.amazonaws.com/images/social/m_4f0f3bbe3082a.jpg" alt="descriptioImmage">
+              <a href="https://media.giphy.com/media/l1KVboXQeiaX7FHgI/giphy.gif" target="_blank"> Click here to go to the image website!</a>           
+            </td>
+            <td>Row 1</td>
+            <td>Row 1</td>
+            <td>Row 1</td>
+          </tr>
+          <tr>
+            <td>Row 2</td>
+            <td>
+              <img src="https://pawprint.s3.amazonaws.com/images/social/m_4f0f3bbe3082a.jpg" alt="descriptioImmage">
+              <a href="https://media.giphy.com/media/l1KVboXQeiaX7FHgI/giphy.gif" target="_blank"> Click here to go to the image website!</a>           
+            </td>
+            </td>
+            <td>Row 2</td>
+            <td>Row 2</td>
+            <td>Row 2</td>
+          </tr>
+          <tr>
+            <td>Row 3</td>
+            <td>
+              <img src="https://pawprint.s3.amazonaws.com/images/social/m_4f0f3bbe3082a.jpg" alt="descriptioImmage">
+              <a href="https://media.giphy.com/media/l1KVboXQeiaX7FHgI/giphy.gif" target="_blank"> Click here to go to the image website!</a>           
+            </td>
+            <td>Row 3</td>
+            <td>Row 3</td>
+            <td>Row 3</td>
+          </tr>
+          <tr>
+            <td>Row 4</td>
+            <td>
+              <img src="https://pawprint.s3.amazonaws.com/images/social/m_4f0f3bbe3082a.jpg" alt="descriptioImmage">
+              <a href="https://media.giphy.com/media/l1KVboXQeiaX7FHgI/giphy.gif" target="_blank"> Click here to go to the image website!</a>           
+            </td>
+            <td>Row 4</td>
+            <td colspan="2">Row 4</td>
+          </tr>       
+        </tbody>
+      </table>
+    </div>
+    <hr>
+    <div id="container">
+      <p>
+        <ul>
+          <li>unordered element</li>
+          <li>unordered element</li>
+          <li>unordered element</li>
+          <li>unordered element</li>
+          <li>unordered element</li>
+          <li>unordered element</li>
+        </ul>
+      </p>
+    </div>
+    <footer> Emanuele Bertuol, Strive School Student 2020, No Copyright for this freaky page (nothing to copy about).</footer>
+    <!-- JS EXERCISES
+        30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
+-->
+  <script>
+    // 21) Given variable X = "John" and Y = "Doe", write on the console log "John <> Doe"
+    let X = "John", Y = "Doe";
+    console.log(X, " <> ", Y);
+
+    // 22) Create an object with properties such Name, Surname, Email
+    let info = {
+      name:"",
+      surname:"",
+      email:""
+    };
+    console.log(info);
+
+    // 23) Delete Email from the previously created object
+    delete info.name;
+
+    // 24) Create an array with 10 strings in     
+    let myArray = [];
+    for(let i=0; i<10; i++){
+      myArray[i]="Hello!";
+    }
+    
+    // 25) Print in the console every string in the previous array
+    console.log(myArray);
+
+    // 26) Create an array with 100 random numbers in it
+    let randomArray = [];
+    for(let i=0; i<100; i++){
+        randomArray[i]=Math.random()*100;     
+    }
+
+    // 27) Wrote a function to get the MAX and the MIN from the previously created array
+    let maxFinder=function(x){
+    let max=Math.max.apply(0, x);
+    return max;
+    }
+
+    let maxRandomArray=maxFinder(randomArray);
+    console.log(maxRandomArray);
+
+    let minFinder=function(x){
+          let min=Math.min.apply(0, x);
+          return min;
+    }
+    let minRandomArray=minFinder(randomArray);
+    console.log(minRandomArray);
+
+    // 28) Create an array of arrays, in which every array has 10 random numbers
+
+    let firstArray=[], secondArray=[];
+      for(let i=0; i<10; i++){
+          firstArray[i]=(Math.floor(Math.random()*10));
+        for(let j=0; j<10; j++){
+          secondArray[j]=(Math.floor(Math.random()*10));
+        }       
+      }
+    console.log(firstArray, secondArray);
+
+    // 29) Create a function that gets 2 arrays and returns the longest one
+
+    let lenghtChecker=function(x=[], y=[]){
+    let firstArrayLenght=x.length;
+    let secondaArrayLenght=y.length; 
+    if(firstArrayLenght>secondaArrayLenght){
+        return x;
+      }else if(firstArrayLenght<secondaArrayLenght){
+        return y;
+      }else{
+        return "The arrays have the same lenght!";
+      }
+    }
+
+    let lunghezza=lenghtChecker(myArray, randomArray);
+    console.log(lunghezza);
+
+    // 30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values (not finished!!!)
+
+    let myArrayOfNumbers1=[], myArrayOfNumbers2=[];
+    myArrayOfNumbers1.length=(Math.floor(Math.random()*10));
+    myArrayOfNumbers2.length=(Math.floor(Math.random()*10));
+
+    for(let i=0; i<myArrayOfNumbers1.length; i++){
+        myArrayOfNumbers1[i]=(Math.floor(Math.random()*10));
+    }
+
+    for(let i=0; i<myArrayOfNumbers2.length; i++){
+        myArrayOfNumbers2[i]=(Math.floor(Math.random()*10));
+    }
+
+    console.log(myArrayOfNumbers1);
+    console.log(myArrayOfNumbers2);
+
+    let higherSum=function(x){
+        let sum=0;
+        for(let i=0; i<x.length; i++){
+            sum=+x[i];        
+        }
+        return sum;
+    }
+    let totalSum=higherSum(myArrayOfNumbers2);
+    console.log(totalSum);
+
+    //  DOM 
+
+    //    31) Get element with ID "container" from the page
+    document.querySelector("#container");
+    //    32) Get every "td" from the page
+    document.querySelectorAll("td");
+    //    33) Create a cycle that prints the text inside every td of the page
+    let allTd=document.querySelectorAll("td");
+    for(let i=0; i<allTd.length; i++){
+      console.log(allTd[i]);
+    }
+    //    34) Write a function to change the heading of the page
+    let heading=document.querySelector("h1");
+    heading.innerHTML="<h1>New Heading of the Page!</h>";
+
+
+    //    35) Write a function to add an extra row to the table
+    let newRow=document.createElement("tr");
+    newRow.appendChild(newRow);
+
+
+    //    36) Write a function to add the class "test" to reach row in the table
+    //    37) Write a function to add a red background to every link in the page
+    //    38) Console log "Page loaded" when the page is correctly loaded
+    //    39) Write a function to add new items to a UL
+    //    40) Write a function to empty a list
+       
+    
+
+
+
+  </script>
+
+
+
+  </body>
+
+
+ 
+</html>
+
+
+

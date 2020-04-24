@@ -1,18 +1,32 @@
-/* EXERCISE 10
-Write a function "giveMeRandom" which accepts a number n 
-and returns an array containing n random numbers between 0 and 10
+// 30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
 
+let myArrayOfNumbers1=[], myArrayOfNumbers2=[];
+myArrayOfNumbers1.length=(Math.floor(Math.random()*10));
+myArrayOfNumbers2.length=(Math.floor(Math.random()*10));
 
-function upperFirst(sentence) {
-    let words = sentence.split(' ')
-    let upperWords = []
-    words.forEach(function(word) {
-        upperWords.push(word.toUpperCase())
-    })
-    return upperWords.join(' ')
+for(let i=0; i<myArrayOfNumbers1.length; i++){
+    myArrayOfNumbers1[i]=(Math.floor(Math.random()*10));
 }
-    console.log(upperFirst('hello world'))
+
+for(let i=0; i<myArrayOfNumbers2.length; i++){
+    myArrayOfNumbers2[i]=(Math.floor(Math.random()*10));
+}
+
+console.log(myArrayOfNumbers1);
+console.log(myArrayOfNumbers2);
+
+let higherSum=function(x){
+    let sum=0;
+    for(let i=0; i<x.length; i++){
+        sum=+x[i];        
+    }
+    return sum;
+}
+let totalSum=higherSum(myArrayOfNumbers2);
+console.log(totalSum);
+
+console.log(sum([1,2,3])); 
 
 
-*/
+
 
