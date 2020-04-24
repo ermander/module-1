@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <title>Bingo Challenge</title>
+    <style>
+        h1{
+            color: #000000fa;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 30px;
+        }
+
+        body{
+            background-color: #575e5b;
+            background-image: url(https://www.bingo365.it/wp-content/uploads/cropped-bingo-2.jpg);
+            background-repeat: repeat;
+            background-position: 0 0;
+            background-size: cover;
+        }
+
+        #bingoCells{
+            display: inline-block;
+            width: 70px;
+            text-align: center;
+            min-height: 70px;
+        }
+
+        #bingoPlayerCards{
+            width: 40%;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            border: 1px solid #333;
+            float: right;
+        }
+
+        #playingArea{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        
+
+    </style>
+  <!--
+        BINGO CHALLENGE!!!
+        Create programmatically (with JS) a BINGO board with 76 cells, from 1 to 76.
+        Create a button to randomize a number from 1 to 76. 
+        The same number should be highlighted on the bingo board
+
+        EXTRA: 
+        - Take ALWAYS a new number (avoid randoming 10 3 times for example)
+        - Create a USER BOARD with random 24 numbers that highlights as the main board does
+        - Let the user choose HOW MANY user boards he's willing to play with and create them.
+    -->
+  </head>
+  <body>
+      <h1>Bingo Room N°1</h1>
+      <div id="playingArea">
+        <div id="bingoCells"></div>
+        <!-- Here bingo cells will be insert! -->
+        <div id="bingoPlayerCards"></div>
+        <!-- Here bingo player cards will be insert! -->
+      </div>
+      <div id="numberBingoGenerator"></div>
+      <!-- Here the number generator button will be insert! -->
+
+      <script>
+        var numberOfCells = 76;
+        console.log('this is the value of numberOfDays', numberOfDays)
+        var calendar = document.querySelector('#calendar') // getting a reference for the calendar div
+
+
+
+
+      </script>
+  </body>
+</html>
