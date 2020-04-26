@@ -24,9 +24,3 @@ let higherSum=function(x){
 }
 let totalSum=higherSum(myArrayOfNumbers2);
 console.log(totalSum);
-
-console.log(sum([1,2,3])); 
-
-
-
-

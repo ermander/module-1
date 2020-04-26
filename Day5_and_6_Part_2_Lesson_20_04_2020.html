@@ -26,36 +26,34 @@
 
   <body>
     <div>
-      <input id="name" type="text" onkeydown="keyPressed(event)" />
+      <input id="name" type="text" />
     </div>
     <div>
       <input id="email" type="email" />
     </div>
     <div>
-      <input id="saveButton" type="button" value="save data!" onclick="getUserData()" />
+      <input id="button" type="button" value="save data!" onclick="getUserData()"/> 
+      <!-- Il testo da inserire all'interno di un bottone (button) è un valore (value)
+      e va inserito all'interno di value="testo da inserire" 
+      onclick="" è un metodo proprio degli input, che reagisce ad un input dell'utente.
+      Puo' essere abbinato ad parti di codice già scritte per eseguire determinate azioni,
+      come in questo caso, dove all'interno di onclick è stato inserita la funzione getUserData --> 
     </div>
     <script>
-      function getUserData() {
-        let name = document.querySelector('#name').value
-        let email = document.querySelector('#email').value
-        if (name && email.includes('@')) {
-          console.log('name is', name)
-          console.log('email is', email)
-          // alert(name + ' ' + email)
-          let userDiv = document.createElement('div')
-          userDiv.innerText = 'you inputted ' + name + ' and ' + email
-          document.querySelector('body').appendChild(userDiv)
-          document.querySelector('#name').value = ''
-          document.querySelector('#email').value = ''
-        }
-      }
-      function keyPressed(e) {
-        console.log('a key has been pressed!')
-        console.log(e)
-        if (e.key === '#') {
-          alert('the # char is not allowed!')
-        }
-      }
+    // <script> serve per creare degli script javascript, e solitamente vengono inseriti
+    // nella parte finale del documento, all'interno del <body> dopo l'ultimo elemento.
+      function getUserData(){
+        let name = document.querySelector("#name").value; // Con questo tipo di scrittura, la querySelector("").value
+        // va a targettizare il valore all'interno di dell'inpunt
+        let email = document.querySelector("#email").value;
+        console.log("name is : ",name);
+        console.log("email is : ",email);
+        document.querySelector("#name").value = ""; 
+        document.querySelector("#email").value = ""; 
+        // Con questa procedura, dopo aver collezionato i dati dell'utente, la funzione 
+        // cancella il testo presente nei relativi campi, "pulendoli".
+      }  
+
     </script>
-  </body>
+   </body>
 </html>
