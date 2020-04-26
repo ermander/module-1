@@ -16,13 +16,43 @@ Note: the form should just be implemented in HTML + CSS, no extra code needed.
 <html lang="en">
   <head>
     <!-- EXERCISE 1:
-    Specify the title, the charset (UTF-8) and the viewport of the page.
+    Specify the title, the charset (UTF-8) and the viewport of the page.    
     -->
-    <title>My Fav Barber Shop</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barberia "Da Pissio"</title>
     <style>
-      h1 {
-        color: blue;
+      body{        
+        background-color: rgb(125, 125, 204);
       }
+      h1 {
+        color: rgb(49, 49, 54);
+        text-align: center;
+        font-size: 3em;
+      }
+      h2 {
+        color: rgb(49, 49, 54);
+        text-align: center;
+        font-size: 1.5em;
+      }
+      #sottotitolo{
+        color: rgb(49, 49, 54);
+        text-align: center;
+        font-size: 1.5em;        
+      }
+      #promozione {
+        text-align: center;
+        color: rgb(49, 49, 54);
+      }
+      #indirizzo{
+        text-align: center;
+        color: rgb(49, 49, 54);
+      }
+      #email_form{
+        text-align: center;
+        color: rgb(49, 49, 54);
+      }
+      
       /* EXERCISE 2:  
        Style h1 color, alignment, size as you like it;
        Style h2 color, alignment, size as you like it;
@@ -41,15 +71,33 @@ Note: the form should just be implemented in HTML + CSS, no extra code needed.
     <!-- EXERCISE 3:
             Write the main title of the barber shop and a smaller claim.
         -->
+    <div>
+      <h1>Barberia "Da Pissio"</h1>
+        <p id="sottotitolo">Perchè Pissio, ti gà da dirlo ben!</p> 
+    </div>   
 ​
     <!-- EXERCISE 4: 
             Write a section in which you explain a current promotion
         -->
+    <div>
+      <h2>Promo Pissio Challenge!</h2>
+      <p id="promozione">Se ti xè in bon da dire ben pissio dopo na serie indefinita de ombre <br>
+      (a discresion del barbiere), ti ga diritto ad uno special trattamento alla <br>
+      <strong>BIRA DE MUSSO! </strong><br>
+      Ma no a xè ancora finia! Porta i to amighi, e per ogniuni de staltri che <br>
+      dise ben "pissio", ti ga la possibilità de vinsere el trattamento alla bira de muso!
+      </p>
+    </div>    
 ​
     <!-- EXERCISE 5: 
             Write a section with the address of the shop.
             [OPTIONAL] Link this address to Google Maps page.
         -->
+     <div id="indirizzo">
+       <a href="https://www.google.com/maps/place/Via+S.+Giacomo,+4,+30031+Dolo+VE/@45.4213863,12.0726709,17z/data=!3m1!4b1!4m5!3m4!1s0x477ec89b73ce7777:0x50b2fdb1553ef439!8m2!3d45.4213863!4d12.0748596" target="_blank">
+        Ci puoi trovare in Via San Giacomo 4, Dolo (VE), 30031.
+       </a>       
+     </div>   
 ​
     <!-- EXERCISE 6: 
             Write a "Leave Email" form. 
@@ -58,6 +106,14 @@ Note: the form should just be implemented in HTML + CSS, no extra code needed.
 ​
             [OPTIONAL] On submit click, console log the value of the email
         -->
+        <form>
+          <div id="email_form">
+            <label>Inserisci qui la tua mail per iscriverti alla news letter!</label>
+            <input id="email" type="email" placeholder="enter here the email address">
+            <br>
+            <input id="button" type="button" value="Subscribe now!" onclick="getUserEmail()">
+          </div>
+        </form>
 ​
     <!-- EXERCISE 7: 
             Create an "book haircut" form.
@@ -88,10 +144,14 @@ Note: the form should just be implemented in HTML + CSS, no extra code needed.
       window.onload = function () {
         console.log('Page loaded!')
 ​
-        /* EXERCISE 10:
-                    Write on console the size (height and width) of the current browser window
-                    Write on console the size (height and width) of the current page window
-                */
+        // EXERCISE 10:
+                   // Write on console the size (height and width) of the current browser window
+                   //  Write on console the size (height and width) of the current page window
+                //
+      }
+      function getUserEmail(){
+        let email = document.querySelector("#email").value;
+        console.log("email is : ",email);
       }
     </script>
   </body>
