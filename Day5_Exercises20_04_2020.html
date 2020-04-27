@@ -52,6 +52,40 @@ Note: the form should just be implemented in HTML + CSS, no extra code needed.
         text-align: center;
         color: rgb(49, 49, 54);
       }
+      #tablePrices{
+        display: inline-block;
+        margin: 15px;
+        margin-left: 60%;
+        margin-right: 20%;
+      }
+      #phoneNumber{
+        text-align: center;
+        display: block;
+        margin-left: 20%;
+        margin-right: 60%;
+
+      }
+      #dateBook{
+        text-align: center;
+        display: block;
+        margin-left: 20%;
+        margin-right: 60%;
+
+      }
+      #nameAndSurname{
+        text-align: center;
+        display: block;
+        margin-left: 20%;
+        margin-right: 60%;
+      }
+      #bookHairCut{
+        display: inline-block;
+        height: 200px;
+        width: 300px;
+      }
+      h3{
+        text-align: center;
+      }
       
       /* EXERCISE 2:  
        Style h1 color, alignment, size as you like it;
@@ -127,10 +161,49 @@ Note: the form should just be implemented in HTML + CSS, no extra code needed.
             Style it as you like it.
             [OPTIONAL] On submit click, console log an object containing Phone Number, Date and Name.
         -->
+        <div id="bookHaircut">
+          <h3>Prenota ora il tuo taglio!</h3>
+          <input id="phoneNumber" type="number" placeholder="Inserisci qui il tuo numero">
+          <input id="dateBook" type="date"> 
+          <input id="nameAndSurname" type="text" placeholder="Inserisci nome e cognome ">
+        </div>
 ​
     <!-- EXERCISE 8: 
             Create a table with the price for the services of the barber shop
         -->
+
+        <div id="tablePrices">
+          <table>
+            <thead>
+              <tr>
+                <th>Servizio</th>
+                <th>Prezzo</th>                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Taglio</td>
+                <td>10€</td>                
+              </tr>
+              <tr>
+                <td>Rasata</td>
+                <td>20€</td>                
+              </tr>
+              <tr>
+                <td>Rasatura all'Italiana</td>
+                <td>25€</td>                
+              </tr>
+              <tr>
+                <td>Shave Luxury</td>
+                <td>35€</td>                
+              </tr>
+              <tr>
+                <td>Ricondizionamento Barba</td>
+                <td>15€</td>                
+              </tr>
+            </tbody>
+          </table>
+        </div>
 ​
     <!-- EXERCISE 9: 
             Place here a footer including:
