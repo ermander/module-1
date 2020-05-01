@@ -12,7 +12,7 @@ ASSIGNMENT RULES
 Write the code to execute a SUM between the number 12 and 20
 */
 
-/*
+
 
 console.log(12 + 20)
 
@@ -21,36 +21,35 @@ console.log(12 + 20)
 let addendo1 = 12, addendo2 = 20, somma = addendo1 + addendo2;
 console.log(somma)
 
-*/
 
 
 /* EXERCISE 2 
 Create a variable named X containing the number 12
 */
 
-/*
+
 
 let X = 12;
 
-*/
+
 
 
 /* EXERCISE 3
 Create a variable named name containing the string John Doe
 */
 
-/*
+
 
 let name = "John Doe";
 
-*/
+
 
 
 /* EXERCISE 4
 Execute a DIFFERENCE between the number 12 and the variable X, which stores the value 12
 */
 
-/* 
+
 
 let X = 12, differenza = X - 12;
 console.log(differenza)
@@ -60,7 +59,7 @@ console.log(differenza)
 let X = 12;
 console.log(X - 12)
 
-*/
+
 
 
 /* EXERCISE 5
@@ -70,7 +69,6 @@ Verify then, that name1 and name2 are equals if both lowercase (without changing
 */
 
 
-/*
 
 let name1 = "john", name2 = "John";
 
@@ -88,14 +86,14 @@ if(name1===name2.toLowerCase()){
     console.log("they are still not the same! ")
 }
 
-*/
+
 
 
 /* EXERCISE 6
 Create the variable X (value less than 10). Write the code to print the literal value of the given number (ex.: 1 => one, 5 => five)
 */
 
-/*
+
 
 let X = 9;
 
@@ -121,7 +119,7 @@ if(X===1){
     console.log("The given value is not correct")
 }
 
-*/
+
 
 
 /* EXERCISE 7
@@ -129,12 +127,12 @@ Insert a value in a variable based on the resut of a ternary if
 */
 
 
-/*
+
 let name1 = "john", name2 = "John";
 let name1IsEqualToname2 = (name1===name2 ? "name1 è uguale a name2" : "name1 è diversa da name2")
 console.log(name1IsEqualToname2)
 
-*/
+
 
 
 /* WHEN YOU ARE FINISHED

@@ -13,11 +13,11 @@ Create and array with the first 5 positive numbers
 */
 ​
 
-/* 
+
 
 let myarray = [1, 2 ,3 ,4 ,5 ];
 
-------- Or
+//   Or
 
 let myArray = []
 
@@ -27,9 +27,9 @@ for (let x=0; x<5; x++){
 
 console.log(myArray)
 
-*/
 
-​//------------------------------------------------------------------------------------
+
+
 
 
 /* EXERCISE 2
@@ -37,7 +37,7 @@ Create an object containing your name, surname, email address and age.
 */
 ​
 
-/*
+
 
 
 const myObject {
@@ -48,7 +48,7 @@ const myObject {
 };
 
 
-​*/
+
 
 
 //------------------------------------------------------------------------------------
@@ -58,7 +58,7 @@ const myObject {
 Add to the previously created object a boolean value to rappresent wheter you have or not a driving license
 */
 ​
-/*
+
 const myObject = {
     name: "Emanuele",
     surname: "Bertuol",
@@ -66,7 +66,7 @@ const myObject = {
     age: 22,
     haveDriveLicense: true,
 };
-*/
+
 
 
 //------------------------------------------------------------------------------------
@@ -77,10 +77,10 @@ Remove from the previously created object the age
 */
 
 ​
-// delete myObject1.age;
+delete myObject1.age;
 ​
 
-//------------------------------------------------------------------------------------
+
 
 
 /* EXERCISE 5
@@ -88,7 +88,7 @@ Create a second object with name, surname, email address and verify that this ob
 */
 ​
 
-/*
+
 const myObject1 {
     name: "Emanuele",
     surname: "Bertuol",
@@ -108,10 +108,10 @@ if(myObject2.email===myObject1.email){
 }else{
     console.log("myObject2 has a different email!")
 }
-*/
+
 ​
 
-//------------------------------------------------------------------------------------
+
 
 
 /* EXERCISE 6
@@ -121,7 +121,7 @@ Write an algorithm that calculate totalCost based on this assumption.
 */
 
 ​
-/*
+
 
 let totalShoppingCart1 = 50
 let totalCost
@@ -144,10 +144,10 @@ if (totalShoppingCart2<=50){
     console.log("The total cost with free shipping is : ", totalShoppingCart2)
 }
 
-​*/
 
 
-//------------------------------------------------------------------------------------
+
+
 
 
 /* EXERCISE 7
@@ -156,7 +156,7 @@ Modify the previous answer inserting this information and, applying the same rul
 */
 ​
 
-/*
+
 
 
 let totalShoppingCart1 = 50
@@ -182,10 +182,9 @@ if (totalShoppingCart2<=50){
 }
 
 
-*/
+
 ​
 
-//------------------------------------------------------------------------------------
 
 
 /* EXERCISE 8
@@ -195,7 +194,7 @@ Do it for five cars.
 */
 
 
-/*
+
 let car1 = {
     brand: "Fiat",
     model: "Panda",
@@ -228,10 +227,10 @@ console.log(car5);
 console.log(car6);
 
 
-​*/
+​
 
 
-//------------------------------------------------------------------------------------
+
 
 
 /* EXERCISE 9
@@ -239,14 +238,13 @@ Create a new array called carsForRent containing all the cars from the previous 
 */
 
 
-/*
+
 ​
 let carsForRent = [car1, car2, car3, car4, car5, car6]
 ​
-*/
 
 
-//------------------------------------------------------------------------------------
+
 
 
 /* EXERCISE 10
@@ -254,30 +252,30 @@ Remove the first and the last car from the carsForRent array.
 */
 ​
 
-/* 
+
 
 carsForRent.pop()
 carsForRent.shift()
 
 console.log(carsForRent)
 
-*/
+
 ​
-//------------------------------------------------------------------------------------
+
 
 
 /* EXERCISE 11
 Print in the console, the types of a single car, of the car licensePlate and of the brand
 */
 ​
-/* 
+
 
 console.log(typeof(car1.brand), typeof(car1.licensePlate), typeof(car1.model))
 
-*/
+
 ​
 
-//------------------------------------------------------------------------------------
+
 
 
 /* EXERCISE 12
@@ -285,7 +283,7 @@ Create a new array called carsForSale and insert 3 cars in it.
 Store in the variable totalCars the number of cars in both carsForSale and carsForRent arrays
 */
 ​
-/* 
+
 
 let totalCars;
 let car1 = {}, car2 = {}, car3 = {};
@@ -293,10 +291,10 @@ let carsForSale = [car1, car2, car3];
 totalCars=carsForSale.length;
 console.log(totalCars);
 
-*/
 
 
-//------------------------------------------------------------------------------------
+
+
 
 ​
 /*
@@ -304,7 +302,7 @@ EXERCISE 13
 Print in the console the data from each car in the carsForSale array
 */
 ​
-/* 
+
 
 let car1 = {name:"Fiat", model:"Panda", licensePlate:"AX654585KI"};
 let car2 = {name:"Fiat", model:"Panda", licensePlate:"AX654585KF"};
@@ -312,7 +310,7 @@ let car3 = {name:"Fiat", model:"Panda", licensePlate:"AX654585KG"};
 let carsForSale = [car1, car2, car3];
 console.log(carsForSale);
 
- */
+
 ​
 /* WHEN YOU ARE FINISHED
 Send the code via Slack to the tutor! In the next days we'll also learn how to use GIT 
